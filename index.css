@@ -1,0 +1,93 @@
+/* parte del formulario */
+* {
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 16px;
+}
+.formulario {
+    width: 85%;
+    padding: 4%;
+    box-sizing: border-box;
+    border: 1px solid black;
+    margin: 4% auto;
+}
+.campos, .textarea {
+    width: 75%;
+    display: block;
+    margin-bottom: 2%;
+    padding: 1% 2%;
+    font-size: 1.1em;
+    font-family: monospace;
+}
+.textarea {
+    resize: none;
+    height: 40vh;
+    color: rgb(61, 61, 61);
+}
+.boton {
+    padding: 2%;
+    display: block;
+    margin: 0 auto;
+}
+
+/* ahora para cada una de las tarjetas  */
+
+.tarjeta {
+    width: 80%;
+    margin: 2% auto;
+    border: 1px solid rgb(66, 66, 66);
+    box-shadow: 2px 2px 5px rgb(66, 66, 66);
+    padding: 2%;
+    border-radius: 10px;
+    transition: transform 0.8s ease;
+}
+.tarjeta:hover {
+    transform: scale(1.05);
+}
+.encabezado {
+    display: flex;
+    gap: 2.5%;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.2em;
+    font-family: monospace;
+}
+.foto {
+    width: 5%;
+    border-radius: 50%;
+}
+.titulo {
+    font-size: 1.25em;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.titulo, .descripcion {
+    margin: 1.5%;
+}
+.descripcion {
+    font-size: 1em;
+    margin-left: 2%;
+}
+
+/* interactivo */
+.oculto {
+    display: none;
+}
+.botonAbrir {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+
+@media (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+    .textarea {
+        height: 20vh;
+    }
+}

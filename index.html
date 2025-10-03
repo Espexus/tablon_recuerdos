@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de recuerdos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <input type="button" value="Registro" id="botonAbrir" class="botonAbrir">
+    <form method="post" id="formulario" class="formulario oculto">
+        <input type="text" name="titulo" placeholder="Título de tu recuerdo" class="campos">
+        <textarea name="descripcion" placeholder="Describe tu recuerdo" class="textarea"></textarea>
+        <input type="submit" value="Enviar" class="boton">
+    </form>
+
+
+    <div class="contenedor" id="contenedor">
+
+    </div>
+    <script src="registrar.js"></script>
+    <script src="mostrar.js"></script>
+    <script src="abrirRegistro.js"></script>
+</body>
+</html>
